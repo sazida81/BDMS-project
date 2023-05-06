@@ -1,0 +1,86 @@
+.about
+{
+	background-color: #f25454ed;
+	border-radius: 10px 140px 30px 140px;
+}
+.about h1
+{
+	font-size: 30px;
+	text-align: left;
+	color: white;
+	margin-left: 45px;
+    margin-bottom: -15px;
+}
+.about p 
+{
+	font-size: 13px;
+	text-align: left;
+	color: white;
+	font-family:opensans-bold , sans-serif;
+	padding: 10px;
+	margin-left: 37px;
+}
+.expln
+{
+	background-image: url("images/about1.jpg");
+	width: 100%;
+	height: 100%;
+   background-repeat: repeat-y;
+}
+.expln h2
+{
+	margin: 10px;
+	color: white;
+	font-size: 30px;
+	text-align: left;
+}
+.expln p 
+{
+	margin: 10px;
+	padding: 5px;
+	color: white;
+	font-size: 13px;
+	text-align: left;
+}
+.expln h3
+{
+	color: white;
+	margin: 10px;
+	padding: 5px;
+}
+.expln ol 
+{
+	color: white;
+	font-size: 15px;
+	margin: 10px;
+	padding-top: 0px;
+    padding-bottom: 13px;
+}
+.blood
+{
+	background-image: url("images/about3.jpg");
+    background-repeat: no-repeat;
+}
+.blood h1
+{
+	    color: white;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 42px;
+    padding-right: 768px;
+    /* margin-bottom: 410px; */
+    padding-bottom: 410px;
+}
+.blood h1 p
+{
+	    font-size: 15px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 200px;
+    color: red;
+}
+.blood p
+{
+	    padding-right: 21px;
+    padding-left: 158px;
+}
