@@ -241,6 +241,7 @@ header {
     padding-right: 21px;
     padding-left: 158px;
 }
+
 .register {
     background-color: #f25454ed;
     border-radius: 10px 140px 30px 140px;
@@ -259,10 +260,29 @@ header {
     padding-bottom: 10px;
     font-family: opensans-bold, sans-serif;
 }
-
-.register-form {
+.design-box
+{
     padding: 20px;
     margin: auto;
+    border: 2px solid rgba(255, 0, 0, 0.567);
+    overflow: hidden;
+    display: block;
+    width: 38%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.img-box
+{
+    
+    width: 20%;
+    height: 100%;
+    padding-top: 100px;
+    position: absolute;
+}
+.register-form {
+    padding: 20px;
+        margin-left: 390px;
+    margin-bottom: 70px;
     border: 2px solid rgba(255, 0, 0, 0.567);
     overflow: hidden;
     display: block;
@@ -320,4 +340,92 @@ header {
     width: 98%;
     border: 1px solid red;
     border-radius: 100px;
+}
+
+.login{
+    background-image: url("../images/register1.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.header{
+    background-color: #f25454ed;
+    border-radius: 10px 140px 30px 140px;
+
+}
+.header h1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.header p {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    padding-bottom: 10px;
+    font-family: opensans-bold, sans-serif;
+}
+.login-form {
+    padding: 20px;
+    margin: auto;
+    border: 2px solid rgba(255, 0, 0, 0.567);
+    overflow: hidden;
+    display: block;
+    width: 38%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.login-form h2 {
+    color: #b90000 ;
+    text-align: center;
+}
+
+.login-input-group-full
+{
+    padding-right: 25px;
+}
+
+.login-input-group-full .login-input-field {
+    border: 1px solid red;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    display: table-column;
+    border-radius: 100px;
+    display: flex;
+    width: 100%;
+}
+.login-input-field input::focus-visible{
+    border-color: #b92b27 !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.login-form button {
+    color: #b90000;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    width: 98%;
+    border: 1px solid red;
+    border-radius: 100px;
+}
+.login-design-box
+{
+    padding: 20px;
+    margin: auto;
+    border: 2px solid rgba(255, 0, 0, 0.567);
+    overflow: hidden;
+    display: block;
+    width: 38%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.login-img-box
+{
+    
+    width: 20%;
+    height: 100%;
+    padding-top: 100px;
+    position: absolute;
 }
