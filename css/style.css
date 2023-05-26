@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-}
-body {
+  }
+  body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -10,68 +10,78 @@ body {
     color: #282828;
     display: block;
     max-height: 100%;
-}
-img {
+  }
+  img {
     max-width: 100%;
-}
-li {
+  }
+  li {
     list-style-type: none;
     display: inline;
-}
-a {
+  }
+  a {
     text-decoration: none;
     color: #282828;
-}
-header {
+  }
+  header {
     width: 100%;
     background-color: #f7f7f7;
     border-bottom: 2px solid #d4060d;
-}
-.container{
+  }
+  .container {
     display: block;
     margin: auto;
-}
-.navbar {
+    max-width: 1147px;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 50px; 
-}
-.header-logo {
+    padding: 5px 50px;
+  }
+  .header-logo {
     height: 100%;
     width: 70px;
-}
-.nav-links {
+  }
+  .nav-links {
     list-style: none;
     display: inline-block;
     position: relative;
     margin: 0px 10px;
     cursor: pointer;
-}
-.nav-links a {
+  }
+  .nav-links a {
     color: black;
     text-decoration: none;
     font-weight: 500;
-}
-.navbar ul .nav-links::after {
-    content: '';
+  }
+  .navbar ul .nav-links::after {
+    content: "";
     width: 0%;
     height: 2px;
     background: red;
     display: block;
     margin: auto;
     transition: 0.2s;
-}
-.navbar ul .nav-links:hover::after {
+  }
+  .navbar ul .nav-links:hover::after {
     width: 100%;
-}
-
-.main-section {
+  }
+  
+  .main-section {
     background-image: url("../images/bg-back.jpeg");
     background-size: cover;
     height: 100vh;
-}
-.main-box{
+  }
+  .main-box {
     justify-content: start;
     float: left;
     display: block;
@@ -79,52 +89,68 @@ header {
     margin: 100px;
     width: 40%;
     padding-top: 50px;
-}
-.main-section h1 {
+  }
+  .main-section h1 {
     font-size: 40px;
     text-shadow: 0px 0px 10px rgba(79, 79, 79, 0.28);
     color: #b92b27;
     text-transform: uppercase;
-}
-.main-section p {
+  }
+  .main-section p {
     font-size: 15px;
     color: #3e3434;
     margin: 20px 0px;
-}
-.main-section a {
+  }
+  .main-section a {
     color: #b92b27;
     display: inline-block;
     text-decoration: none;
     background: transparent;
     border: 1px solid #b92b27;
     padding: 10px 30px;
-}
-.main-section a:hover {
+  }
+  .main-section a:hover {
     border: 1px red;
     background: red;
     color: white;
     transition: 0.5s;
-}
-.main-section-btn
-{
+  }
+  .main-section-btn {
     margin: auto;
-}
-.about {
+  }
+  .about {
     background-color: #f7f7f7;
-}
-.about h1 {
-    font-size: 20px;
+    background-image: url("../images/blur.jpg");
     text-align: center;
-    color: red;
-}
-
-.about p {
+    padding: 25px;
+  
+    max-width: 100%;
+    display: block;
+    border-radius: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  
+  .about h1 {
+    font-size: 50px;
+    color: white;
+  }
+  .about h1::after {
+    content: "";
+    border-bottom: 1px solid white;
+    width: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .about p {
     font-size: 13px;
-    text-align: center;
-    color: black;
-}
-
-.about a {
+    color: #b7b7b7;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .about a {
     color: black;
     display: inline-block;
     text-decoration: none;
@@ -134,92 +160,142 @@ header {
     margin-left: 684px;
     margin-bottom: 10px;
     border-radius: 5px;
-}
-
-.about a:hover {
+  }
+  
+  .about a:hover {
     border: 1px #f38881;
     background: #f38881;
     transition: 1s;
-}
+  }
+  
+  .about-section {
+    margin-top: 2rem;
+  }
+  .comp-1,
+  .comp-2 {
+    color: var(--e-global-color-secondary);
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    --widgets-spacing: 20px;
+    width: 55%;
+  }
+  .comp-1 h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .comp-1 p {
+    margin-top: 10px;
+    color: #5e5e5e;
+  }
+  .comp-2 {
+    width: 35%;
+    margin-left: 50px;
+  }
 
-.search {
+  .comp-2 h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    
+  }
+  .comp-2 h2::after
+  {
+    content: "";
+    border-bottom: 1px solid red;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  .comp-2 p {
+    margin-top: 10px;
+    color: #5e5e5e;
+  }
+  .blood-donation h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .blood-donation li{
+    list-style: disc;
+    display: list-item !important;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .what-blood{
+    border: 1px solid red;
+    border-style: dashed;
+    margin-top: 1rem;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .what-blood h2{
+    color: #440b06;
+    margin-top: 0px;
+  }
+  
+  .search {
     background-color: #f7f7f7;
-}
-
-.search h1 {
+  }
+  
+  .search h1 {
     font-size: 20px;
     text-align: center;
     color: red;
-}
-
-.search button {
+  }
+  
+  .search button {
     color: black;
     background: transparent;
     text-decoration: none;
-}
-.search button:hover {
+  }
+  .search button:hover {
     border: 1px solid black;
     background: red;
     transition: 1s;
-}
-.about {
-    background-color: #f25454ed;
-    border-radius: 10px 140px 30px 140px;
-}
-.about h1 {
-    font-size: 30px;
-    text-align: left;
-    color: white;
-    margin-left: 45px;
-    margin-bottom: -15px;
-}
-.about p {
-    font-size: 13px;
-    text-align: left;
-    color: white;
-    padding: 10px;
-    margin-left: 37px;
-}
-.expln {
+  }
+  
+  .expln {
     background-image: url("../images/register1.jpg");
     background-size: cover;
     background-repeat: repeat-y;
-}
-.expln h2 {
+  }
+  .expln h2 {
     margin: 10px;
     color: white;
     font-size: 30px;
     text-align: left;
-}
-
-.expln p {
+  }
+  
+  .expln p {
     margin: 10px;
     padding: 5px;
     color: white;
     font-size: 13px;
     text-align: left;
-}
-
-.expln h3 {
+  }
+  
+  .expln h3 {
     color: white;
     margin: 10px;
     padding: 5px;
-}
-
-.expln ol {
+  }
+  
+  .expln ol {
     color: white;
     font-size: 15px;
     margin: 10px;
     padding-top: 0px;
     padding-bottom: 13px;
-}
-
-.blood {
+  }
+  
+  .blood {
     background-image: url("../images/about3.jpg");
     background-repeat: no-repeat;
-}
-
-.blood h1 {
+  }
+  
+  .blood h1 {
     color: white;
     font-size: 56px;
     text-align: center;
@@ -227,86 +303,77 @@ header {
     padding-right: 768px;
     /* margin-bottom: 410px; */
     padding-bottom: 410px;
-}
-
-.blood h1 p {
+  }
+  
+  .blood h1 p {
     font-size: 15px;
     text-align: left;
     padding: 20px;
     padding-top: 200px;
     color: red;
-}
-
-.blood p {
+  }
+  
+  .blood p {
     padding-right: 21px;
     padding-left: 158px;
-}
-
-.register {
+  }
+  
+  .register {
     background-color: #f25454ed;
     border-radius: 10px 140px 30px 140px;
-
-}
-.register h1 {
+  }
+  .register h1 {
     text-align: center;
     font-size: 30px;
     color: white;
-}
-
-.register p {
+  }
+  
+  .register p {
     text-align: center;
     font-size: 13px;
     color: white;
     padding-bottom: 10px;
     font-family: opensans-bold, sans-serif;
-}
-.design-box
-{
-    padding: 20px;
+  }
+  .design-box {
+    padding: 25px;
     margin: auto;
     border: 2px solid rgba(255, 0, 0, 0.567);
     overflow: hidden;
-    display: block;
-    width: 38%;
     border-radius: 10px;
-    margin-top: 100px;
-}
-.img-box
-{
-    
-    width: 20%;
-    height: 100%;
-    padding-top: 100px;
-    position: absolute;
-}
-.register-form {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: 100px auto;
+  }
+  .img-box {
+    margin: auto;
+    width: 50%;
+  }
+  .register-form {
     padding: 20px;
-        margin-left: 390px;
-    margin-bottom: 70px;
     border: 2px solid rgba(255, 0, 0, 0.567);
     overflow: hidden;
     display: block;
-    width: 38%;
+    width: 45%;
     border-radius: 10px;
-    margin-top: 100px;
-}
-.register-form h2 {
-    color: #b90000 ;
+  }
+  .register-form h2 {
+    color: #b90000;
     text-align: center;
-}
-.input-group{
+  }
+  .input-group {
     display: flex;
     max-width: 100%;
-}
-.input-group-full
-{
+  }
+  .input-group-full {
     padding-right: 25px;
-}
-.input-field
-{
+  }
+  .input-field {
     display: contents;
-}
-.input-field input{
+  }
+  .input-field input {
     display: inline;
     border: 1px solid red;
     padding: 10px 10px;
@@ -315,8 +382,8 @@ header {
     margin-left: 0px;
     border-radius: 1px;
     border-radius: 100px;
-}
-.input-group-full .input-field {
+  }
+  .input-group-full .input-field {
     border: 1px solid red;
     padding: 10px 10px;
     margin: 10px 0px;
@@ -324,14 +391,14 @@ header {
     border-radius: 100px;
     display: flex;
     width: 100%;
-}
-.input-field input::focus-visible{
+  }
+  .input-field input::focus-visible {
     border-color: #b92b27 !important;
     outline: none;
     border: none;
     box-shadow: none;
-}
-.register-form button {
+  }
+  .register-form button {
     color: #b90000;
     text-align: center;
     padding-top: 8px;
@@ -340,32 +407,37 @@ header {
     width: 98%;
     border: 1px solid red;
     border-radius: 100px;
-}
-
-.login{
+    transform: 0.5s;
+    cursor: pointer;
+  }
+  .register-form button:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .login {
     background-image: url("../images/register1.jpg");
     background-size: cover;
     background-repeat: repeat-y;
-}
-.header{
+  }
+  .header {
     background-color: #f25454ed;
     border-radius: 10px 140px 30px 140px;
-
-}
-.header h1 {
+  }
+  .header h1 {
     text-align: center;
     font-size: 30px;
     color: white;
-}
-
-.header p {
+  }
+  
+  .header p {
     text-align: center;
     font-size: 13px;
     color: white;
     padding-bottom: 10px;
     font-family: opensans-bold, sans-serif;
-}
-.login-form {
+  }
+  .login-form {
     padding: 20px;
     margin: auto;
     border: 2px solid rgba(255, 0, 0, 0.567);
@@ -374,18 +446,17 @@ header {
     width: 38%;
     border-radius: 10px;
     margin-top: 100px;
-}
-.login-form h2 {
-    color: #b90000 ;
+  }
+  .login-form h2 {
+    color: #b90000;
     text-align: center;
-}
-
-.login-input-group-full
-{
+  }
+  
+  .login-input-group-full {
     padding-right: 25px;
-}
-
-.login-input-group-full .login-input-field {
+  }
+  
+  .login-input-group-full .login-input-field {
     border: 1px solid red;
     padding: 10px 10px;
     margin: 10px 0px;
@@ -393,14 +464,14 @@ header {
     border-radius: 100px;
     display: flex;
     width: 100%;
-}
-.login-input-field input::focus-visible{
+  }
+  .login-input-field input::focus-visible {
     border-color: #b92b27 !important;
     outline: none;
     border: none;
     box-shadow: none;
-}
-.login-form button {
+  }
+  .login-form button {
     color: #b90000;
     text-align: center;
     padding-top: 8px;
@@ -409,9 +480,8 @@ header {
     width: 98%;
     border: 1px solid red;
     border-radius: 100px;
-}
-.login-design-box
-{
+  }
+  .login-design-box {
     padding: 20px;
     margin: auto;
     border: 2px solid rgba(255, 0, 0, 0.567);
@@ -420,12 +490,11 @@ header {
     width: 38%;
     border-radius: 10px;
     margin-top: 100px;
-}
-.login-img-box
-{
-    
+  }
+  .login-img-box {
     width: 20%;
     height: 100%;
     padding-top: 100px;
     position: absolute;
-}
+  }
+  
